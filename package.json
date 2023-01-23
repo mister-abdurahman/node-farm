@@ -1,14 +1,14 @@
 {
   "name": "farm",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Food API",
   "default": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "start": "parcel index.js",
+    "build": "parcel build index.js --dist-dir ./dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aramide Ramadan",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.8.3"
