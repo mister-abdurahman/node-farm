@@ -2,10 +2,9 @@
   "name": "farm",
   "version": "1.0.0",
   "description": "Simple Food API",
-  "default": "index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel index.js",
-    "build": "parcel build index.js --dist-dir ./dist"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "Aramide Ramadan",
