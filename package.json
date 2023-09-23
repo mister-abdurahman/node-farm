@@ -1,8 +1,11 @@
 {
   "name": "farm",
   "version": "1.0.0",
-  "description": "Simple Food API",
+  "description": "Simple Food App Layout Built on Node Server",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "node index.js"
   },
