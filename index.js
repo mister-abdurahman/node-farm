@@ -21,6 +21,11 @@ const templateProduct = fs.readFileSync(
   "utf-8"
 );
 
+const templatePageNotFound = fs.readFileSync(
+  `${__dirname}/templates/template-page-not-found.html`,
+  "utf-8"
+);
+
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, "utf-8");
 const dataObj = JSON.parse(data);
 
@@ -105,6 +110,9 @@ app.get("/product", async (req, res, next) => {
   }
 });
 
+app.get("*", (req, res) => {
+  return res.status(404).end(templatePageNotFound);
+});
 // Error Handling
 app.use((err, req, res, next) => {
   const message = err.message || "<h1>Page not found</h1>";
